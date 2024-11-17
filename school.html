@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的学校 - 华中科技大学</title>
+    <style>
+        /* 页面背景和字体样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+            color: #333;
+            padding: 20px;
+        }
+        /* 顶部标题 */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(135deg, #0078D7, #0056A4);
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2em;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 8px 16px;
+            background: #004a9f;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        header a:hover {
+            background: #0061cc;
+        }
+        /* 主容器 */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        /* 介绍文字卡片样式 */
+        .text-content {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fefefe;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .text-content:hover {
+            transform: scale(1.02);
+        }
+        h2 {
+            font-size: 1.8em;
+            color: #0056A4;
+            border-bottom: 3px solid #0078D7;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        /* 图片展示 */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.4s, box-shadow 0.4s;
+            cursor: pointer;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        /* 底部样式 */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #0078D7;
+            color: #fff;
+            font-size: 0.9em;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>我的学校 - 华中科技大学</h1>
+    <a href="index.html">返回主页</a>
+</header>
+
+<div class="container">
+    <!-- 学校介绍内容卡片 -->
+    <div class="text-content">
+        <h2>关于华中科技大学</h2>
+        <p>华中科技大学坐落于湖北省武汉市，是中国著名的综合性大学之一，拥有悠久的历史和丰厚的文化底蕴。作为国家“985工程”和“211工程”重点建设的高等学府，华中科技大学在教育、科研、创新等方面处于国内领先地位。</p>
+        <p>学校占地面积广阔，校园环境优美，设施完备。每当春夏季，校园内绿意盎然，鸟语花香，是学生学习和生活的理想场所。</p>
+    </div>
+
+    <!-- 学校图片展示九宫格 -->
+    <div class="gallery">
+        <img src="./image/campus1.jpg" alt="校园景观1">
+        <img src="./image/campus2.jpg" alt="校园景观2">
+        <img src="./image/campus3.jpg" alt="校园景观3">
+        <img src="./image/campus4.jpg" alt="校园景观4">
+
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 我的个人主页 | 华中科技大学</p>
+</footer>
+</body>
+</html>

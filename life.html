@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的生活</title>
+    <style>
+        /* 通用样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+        /* 顶部标题样式 */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(135deg, #4CAF50, #81C784);
+            color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.2em;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 8px 16px;
+            background: #388E3C;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        header a:hover {
+            background: #66BB6A;
+        }
+        /* 内容布局 */
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        /* 旅行记录文字部分 */
+        .text-content {
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.8em;
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            text-align: justify;
+            color: #555;
+        }
+        /* 图片九宫格样式 */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* 底部样式 */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 0.9em;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>我的生活</h1>
+    <a href="index.html">返回主页</a>
+</header>
+
+<div class="container">
+    <!-- 旅行文字描述 -->
+    <div class="text-content">
+        <h2>南京之旅</h2>
+        <p>南京是一座历史悠久、文化丰富的城市，走在街头巷尾，感受到江南独特的温柔与宁静。</p>
+        <p>在古秦淮河畔漫步，望着小桥流水人家，仿佛时光倒流。中山陵的庄严肃穆，让人不禁敬仰伟人的气魄。</p>
+        <p>当然，少不了南京大排档的地道美食，从鸭血粉丝汤到盐水鸭，每一口都是地道的味道。</p>
+    </div>
+
+    <!-- 图片九宫格 -->
+    <div class="gallery">
+        <img src="./image/visit1.jpg" alt="南京之旅照片1">
+        <img src="./image/visit2.jpg" alt="南京之旅照片2">
+        <img src="./image/visit3.jpg" alt="南京之旅照片3">
+        <img src="./image/visit4.jpg" alt="南京之旅照片4">
+        <img src="./image/visit5.jpg" alt="南京之旅照片5">
+        <img src="./image/visit6.jpg" alt="南京之旅照片6">
+        <img src="./image/visit7.jpg" alt="南京之旅照片7">
+        <img src="./image/visit8.jpg" alt="南京之旅照片8">
+        <img src="./image/visit9.jpg" alt="南京之旅照片9">
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 我的个人主页 | 南京之旅</p>
+</footer>
+</body>
+</html>

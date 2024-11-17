@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人经历</title>
+    <style>
+        /* 通用样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* 顶部导航样式 */
+        header {
+            background: linear-gradient(135deg, #4CAF50, #81C784);
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* 个人经历容器样式 */
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* 标题样式 */
+        h2 {
+            font-size: 2em;
+            color: #4CAF50;
+            border-bottom: 3px solid #4CAF50;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* 列表和段落样式 */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        /* 每段经历的样式 */
+        .experience {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .experience h3 {
+            font-size: 1.6em;
+            margin-bottom: 5px;
+            color: #388E3C;
+        }
+
+        .experience p {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        /* 底部样式 */
+        footer {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* 链接按钮样式 */
+        .link-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            color: #fff;
+            background-color: #388E3C;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .link-button:hover {
+            background-color: #66BB6A;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>个人经历</h1>
+    <p>来自华科大四老油条的混分设计</p>
+</header>
+
+<div class="container">
+    <h2>教育背景</h2>
+    <div class="experience">
+        <h3>华中科技大学</h3>
+        <p>计算机科学与技术本科（2021 - 2025）</p>
+        <ul>
+            <li>重点学习数据结构、算法、操作系统、数据库等核心课程</li>
+            <li>参与多个开源项目，竞赛获得优秀实习奖项</li>
+        </ul>
+    </div>
+
+    <h2>竞赛经历</h2>
+    <div class="experience">
+        <h3>蓝桥杯</h3>
+        <p>2024年1月 - 2024年7月</p>
+        <ul>
+            <li>人工智能赛道（团队赛）国家级一等奖</li>
+            <li>C++编程赛道省三等奖</li>
+        </ul>
+    </div>
+
+    <div class="experience">
+        <h3>其他竞赛</h3>
+        <p>2023年7月-2024年2月</p>
+        <ul>
+            <li>睿抗编程赛道省二等奖</li>
+            <li>第十届全国统计建模大赛省二等奖</li>
+        </ul>
+    </div>
+
+    <h2>技能与技术栈</h2>
+    <ul>
+        <li>编程语言：C++, Python, SQL</li>
+        <li>框架与库：TensorFlow, PyTorch</li>
+        <li>数据库：MySQL</li>
+        <li>工具与技术：Git, Linux</li>
+    </ul>
+
+    <p><a href="index.html" class="link-button">返回个人主页</a></p>
+</div>
+
+<footer>
+    <p>&copy; 2024 我的个人主页</p>
+</footer>
+
+</body>
+</html>

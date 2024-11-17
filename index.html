@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <style>
+        /* 通用样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+        /* 顶部标题样式 */
+        header {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #4CAF50, #81C784);
+            color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            width: 100px;
+            height: 100px;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+        header h1 {
+            font-size: 2em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        header p {
+            font-size: 1em;
+            opacity: 0.9;
+        }
+        /* 主体布局样式 */
+        .container {
+            display: flex;
+            margin: 20px auto;
+            max-width: 1200px;
+            height: calc(100vh - 140px);
+            position: relative;
+        }
+        /* 左侧头像及链接样式 */
+        .left {
+            width: 200px;
+            padding-right: 20px;
+            z-index: 1;
+            text-align: center;
+        }
+        .left img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .link-button {
+            display: inline-block;
+            width: 100%; /* 设置为100%宽度，确保与头像同宽 */
+            margin-top: 20px;
+            padding: 12px 20px;
+            color: #fff;
+            background: linear-gradient(135deg, #4CAF50, #66BB6A);
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+            transition: all 0.3s ease; /* 平滑过渡效果 */
+            border: 2px solid transparent; /* 透明边框，用于hover时的边框效果 */
+        }
+
+        .link-button:hover {
+            background: linear-gradient(135deg, #388E3C, #81C784);
+            transform: translateY(-3px); /* 鼠标悬停时稍微向上浮动 */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* 增加阴影效果 */
+            border: 2px solid #388E3C; /* 增加边框高亮效果 */
+        }
+
+        /* 中间内容区域样式 */
+        .content {
+            flex: 1;
+            padding: 0 20px;
+            overflow-y: auto;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        h2 {
+            color: #4CAF50;
+            font-size: 1.8em;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 5px 0;
+        }
+        /* 右侧背景图片样式 */
+        .right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background-image: url('./image/个人主页.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 1.0;
+        }
+        /* 底部样式 */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 0.9em;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <!-- 华中大在线图片 -->
+    <img src="./image/online.gif" alt="华中大在线">
+    <div>
+        <h1>欢迎来到我的个人主页</h1>
+        <p>你好！很高兴你能来到这里</p>
+    </div>
+</header>
+
+<div class="container">
+    <!-- 左侧头像 -->
+    <div class="left">
+        <img src="./image/头像.jpg" alt="头像">
+        <!-- 链接到经历页面 -->
+        <a href="experience.html" class="link-button">我的经历</a>
+        <!-- 链接到生活页面 -->
+        <a href="life.html" class="link-button">我的生活</a>
+        <a href="school.html" class="link-button">我的学校</a>
+        <a href="honors.html" class="link-button">荣誉成就</a>
+    </div>
+
+    <!-- 中间内容区域 -->
+    <div class="content">
+        <h2>关于我</h2>
+        <p>我是一个热爱技术的开发者，也在探索C++编程和压缩算法。</p>
+
+        <h2>技能</h2>
+        <ul>
+            <li>编程语言：C++, Python, JavaScript</li>
+            <li>框架与库：PyTorch, TensorFlow, PMDK</li>
+            <li>数据库：MySQL,Miniob</li>
+            <li>工具：Git, CMake</li>
+        </ul>
+
+        <h2>项目经验</h2>
+        <ul>
+            <li>实现B+树结构并优化PCM效率</li>
+            <li>搭建了多线程数据处理环境</li>
+            <li>开发基于GNN的图神经网络模型</li>
+        </ul>
+
+        <h2>联系方式</h2>
+        <p>邮箱: 2784826673@qq.com</p>
+        <p>GitHub: <a href="https://github.com/sakara" target="_blank">https://github.com/sakara</a></p>
+
+        <h2>返回寝室主页</h2>
+        <p><a href="http://dormitory.example.com" target="_blank">点击这里返回寝室主页</a></p>
+    </div>
+
+    <!-- 右侧背景图片 -->
+    <div class="right"></div>
+</div>
+
+<footer>
+    <p>&copy; 2024 我的个人主页</p>
+</footer>
+</body>
+</html>
